@@ -54,7 +54,7 @@ const portfolioData = {
       date: "May 2025 — Jul 2025",
       icon: "heart-pulse",
       github: "https://github.com/Tarique2002/Liver-Disorder-Detection",
-      demo: ""
+      demo: "https://liver-disorder-detection-csmbqquxdaomhhrngray8z.streamlit.app/"
     }
   ],
 
