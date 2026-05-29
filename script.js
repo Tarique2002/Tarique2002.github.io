@@ -45,7 +45,7 @@ const portfolioData = {
       date: "May 2024 — Jul 2024",
       icon: "activity",
       github: "https://github.com/Tarique2002/Glucose-Monitoring-Prediction",
-      demo: ""
+      demo: "https://glucose-monitoring-prediction-qwc6vbatq8cswr4z7kt9ib.streamlit.app/"
     },
     {
       title: "Advanced Liver Disorder Detection using AI",
