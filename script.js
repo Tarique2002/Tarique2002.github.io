@@ -49,11 +49,11 @@ const portfolioData = {
     },
     {
       title: "Advanced Liver Disorder Detection using AI",
-      description: "AI-based detection of advanced liver disorders. Developed machine learning-driven clinical decision support systems for medical diagnostics.",
-      tags: ["Python", "AI", "Machine Learning", "Healthcare"],
+      description: "AI-powered clinical decision support chatbot for liver disorder detection. Combines Random Forest ML model with Google Gemini AI chatbot, built with Streamlit.",
+      tags: ["Python", "AI", "Machine Learning", "Streamlit", "Healthcare"],
       date: "May 2025 — Jul 2025",
       icon: "heart-pulse",
-      github: "https://github.com/Tarique2002/Advance-Liver-Disorder",
+      github: "https://github.com/Tarique2002/Liver-Disorder-Detection",
       demo: ""
     }
   ],
