@@ -44,6 +44,7 @@
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#resume">Resume</a></li>
                 <li><a href="#contact" class="nav-cta">Contact Me</a></li>
             </ul>
             <div class="menu-toggle" id="mobile-menu">
@@ -80,7 +81,7 @@
                     <a href="#projects" class="btn-primary hero-btn-projects">
                         <i data-lucide="folder-open"></i> View Projects
                     </a>
-                    <a href="#" id="downloadResumeBtn" class="btn-secondary hero-btn-resume" download>
+                    <a href="assets/resume.png" id="downloadResumeBtn" class="btn-secondary hero-btn-resume" download="Mohd_Tarique_Ansari_Resume.png">
                         <i data-lucide="download"></i> Download CV
                     </a>
                 </div>
@@ -188,6 +189,39 @@
             </div>
         </div>
     </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2 class="section-title">My <span class="accent">Resume</span></h2>
+                <p class="section-subtitle">View and download my professional resume</p>
+            </div>
+            <div class="resume-content fade-up">
+                <div class="resume-preview">
+                    <img src="assets/resume.png" alt="Mohd. Tarique Ansari Resume" class="resume-image" id="resumeImage">
+                    <div class="resume-overlay" id="resumeOverlay">
+                        <i data-lucide="zoom-in"></i>
+                        <span>Click to view full size</span>
+                    </div>
+                </div>
+                <div class="resume-actions">
+                    <a href="assets/resume.png" class="btn-primary" download="Mohd_Tarique_Ansari_Resume.png">
+                        <i data-lucide="download"></i> Download Resume
+                    </a>
+                    <a href="assets/resume.png" class="btn-secondary" target="_blank">
+                        <i data-lucide="external-link"></i> Open in New Tab
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Lightbox -->
+    <div class="resume-lightbox" id="resumeLightbox">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close"><i data-lucide="x"></i></button>
+        <img src="assets/resume.png" alt="Resume Full View" class="lightbox-image">
+    </div>
 
     <!-- Contact Section -->
     <section id="contact" class="section">

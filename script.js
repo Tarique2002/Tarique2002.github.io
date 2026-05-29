@@ -10,7 +10,7 @@ const portfolioData = {
   microline: "B.Tech CSE  |  Data Science  |  Machine Learning",
   bio: `A passionate Computer Science student with strong analytical skills and a commitment to delivering efficient, high-quality solutions. I specialize in applying <span class='hl-accent'>Artificial Intelligence</span> and <span class='hl-purple'>Machine Learning</span> to solve <span class='hl-blue'>real-world problems</span>, combining theoretical knowledge with practical experience in data science.`,
   heroImage: "assets/profile.png",
-  resumeLink: "#",
+  resumeLink: "assets/resume.png",
 
   socialLinks: [
     { platform: "LinkedIn", url: "https://www.linkedin.com/in/mohd-tarique-948a37308", icon: "linkedin" },
@@ -145,6 +145,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initSmoothScroll();
   initBackToTop();
   initCountUpStats();
+  initResumeLightbox();
 });
 
 
@@ -653,4 +654,49 @@ function initCountUpStats() {
   }, { threshold: 0.5 });
 
   statCards.forEach(card => observer.observe(card));
+}
+
+
+// ─── Resume Lightbox ────────────────────────────────────────
+function initResumeLightbox() {
+  const preview = document.getElementById("resumeOverlay");
+  const lightbox = document.getElementById("resumeLightbox");
+  const closeBtn = document.getElementById("lightboxClose");
+
+  if (!preview || !lightbox) return;
+
+  // Open lightbox
+  preview.addEventListener("click", () => {
+    lightbox.classList.add("active");
+    document.body.style.overflow = "hidden";
+  });
+
+  // Also allow clicking the preview image itself
+  const resumePreview = document.querySelector(".resume-preview");
+  if (resumePreview) {
+    resumePreview.addEventListener("click", () => {
+      lightbox.classList.add("active");
+      document.body.style.overflow = "hidden";
+    });
+  }
+
+  // Close lightbox
+  function closeLightbox() {
+    lightbox.classList.remove("active");
+    document.body.style.overflow = "";
+  }
+
+  if (closeBtn) closeBtn.addEventListener("click", closeLightbox);
+
+  // Close on background click
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  // Close on Escape key
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && lightbox.classList.contains("active")) {
+      closeLightbox();
+    }
+  });
 }
