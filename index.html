@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohd. Tarique Ansari | Portfolio</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+    <meta name="description"
+        content="Portfolio of Mohd. Tarique Ansari — B.Tech CSE student specializing in AI, Machine Learning, and Data Science.">
+    <meta name="keywords" content="Mohd Tarique Ansari, AI, Machine Learning, Data Science, Portfolio, B.Tech CSE">
+    <meta name="author" content="Mohd. Tarique Ansari">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Mohd. Tarique Ansari | Portfolio">
+    <meta property="og:description" content="AI & Machine Learning Enthusiast | B.Tech CSE Student">
+    <meta property="og:type" content="website">
+
+    <!-- Preconnect Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@0.477.0"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgressBar"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#home" class="nav-logo"><i data-lucide="code-xml"></i> Tarique</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact" class="nav-cta">Contact Me</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background"></div>
+        <div class="hero-content fade-up">
+            <div class="hero-text">
+                <div class="hero-header-info">
+                    <p class="greeting">Hello, I'm</p>
+                    <h1 class="hero-name gradient-text" id="heroName"></h1>
+                    <p class="hero-role" id="heroRoleDisplay"></p>
+                    <p class="hero-microline" id="heroMicroline"></p>
+                </div>
+
+                <div class="hero-visuals-wrapper">
+                    <div class="hero-image-container" id="heroImageContainer"></div>
+
+                    <div class="hero-actions-wrapper">
+                        <div class="hero-socials" id="heroSocials"></div>
+                    </div>
+                </div>
+
+                <p class="hero-bio fade-up" id="heroBio"></p>
+
+                <div class="hero-buttons-container fade-up">
+                    <a href="#projects" class="btn-primary hero-btn-projects">
+                        <i data-lucide="folder-open"></i> View Projects
+                    </a>
+                    <a href="#" id="downloadResumeBtn" class="btn-secondary hero-btn-resume" download>
+                        <i data-lucide="download"></i> Download CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2 class="section-title">About <span class="accent">Me</span></h2>
+                <p class="section-subtitle">A brief introduction about who I am</p>
+            </div>
+            <div class="about-content fade-up">
+                <div class="about-text">
+                    <p>I'm a <strong>Computer Science & Engineering</strong> student at Amity University Lucknow, 
+                    with a deep passion for <span class="accent">Artificial Intelligence</span> and 
+                    <span class="accent">Machine Learning</span>. I thrive on using technology to solve 
+                    complex, real-world problems — from predicting health outcomes to building intelligent 
+                    decision-support systems.</p>
+                    <p>My journey in tech is driven by curiosity and a commitment to continuous learning. 
+                    Whether it's exploring new algorithms, analyzing datasets, or building predictive models, 
+                    I bring strong analytical skills and a results-oriented mindset to every project.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number" id="statProjects">2+</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="statExperience">2+</div>
+                        <div class="stat-label">Internships</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="statCerts">1</div>
+                        <div class="stat-label">Certification</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="statCGPA">7.37</div>
+                        <div class="stat-label">CGPA</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2 class="section-title">My <span class="accent">Skills</span></h2>
+                <p class="section-subtitle">Technologies and tools I work with</p>
+            </div>
+            <div class="skills-grid" id="skillsGrid"></div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2 class="section-title">My <span class="accent">Projects</span></h2>
+                <p class="section-subtitle">Showcasing my recent work and contributions</p>
+            </div>
+            <div class="projects-grid" id="projectsGrid"></div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2 class="section-title">Work <span class="accent">Experience</span></h2>
+                <p class="section-subtitle">My professional journey so far</p>
+            </div>
+            <div class="experience-timeline" id="experienceTimeline"></div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2 class="section-title">My <span class="accent">Education</span></h2>
+                <p class="section-subtitle">Academic background and qualifications</p>
+            </div>
+            <div class="education-grid" id="educationGrid"></div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2 class="section-title">My <span class="accent">Certifications</span></h2>
+                <p class="section-subtitle">Professional certifications and achievements</p>
+            </div>
+            <div class="certifications-grid" id="certificationsGrid"></div>
+
+            <!-- Achievements -->
+            <div class="achievements-section fade-up">
+                <h3 class="achievements-title"><i data-lucide="trophy"></i> Achievements</h3>
+                <div class="achievements-list" id="achievementsList"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+                <p class="section-subtitle">Feel free to reach out for collaborations or opportunities</p>
+            </div>
+            <div class="contact-content fade-up">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i data-lucide="mail"></i></div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:mohdtariqueansari8899@gmail.com">mohdtariqueansari8899@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i data-lucide="phone"></i></div>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="tel:+918052236207">+91-8052236207</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i data-lucide="linkedin"></i></div>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/mohd-tarique-948a37308" target="_blank">Mohd. Tarique Ansari</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Lucknow, India</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="contactName">Your Name</label>
+                        <input type="text" id="contactName" name="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactEmail">Your Email</label>
+                        <input type="email" id="contactEmail" name="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactSubject">Subject</label>
+                        <input type="text" id="contactSubject" name="subject" placeholder="Project Collaboration" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactMessage">Message</label>
+                        <textarea id="contactMessage" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary btn-submit" id="submitBtn">
+                        <i data-lucide="send"></i> Send Message
+                    </button>
+                    <div class="form-success" id="formSuccess">
+                        <i data-lucide="check-circle"></i>
+                        <p>Thank you! Your message has been sent successfully.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <a href="#home" class="footer-logo"><i data-lucide="code-xml"></i> Tarique</a>
+                    <p>Building the future with AI & Machine Learning</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-socials" id="footerSocials">
+                    <a href="https://www.linkedin.com/in/mohd-tarique-948a37308" target="_blank" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                    <a href="mailto:mohdtariqueansari8899@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+                    <a href="tel:+918052236207" aria-label="Phone"><i data-lucide="phone"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mohd. Tarique Ansari. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- Toast container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
