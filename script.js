@@ -10,7 +10,7 @@ const portfolioData = {
   microline: "B.Tech CSE  |  Data Science  |  Machine Learning",
   bio: `A passionate Computer Science student with strong analytical skills and a commitment to delivering efficient, high-quality solutions. I specialize in applying <span class='hl-accent'>Artificial Intelligence</span> and <span class='hl-purple'>Machine Learning</span> to solve <span class='hl-blue'>real-world problems</span>, combining theoretical knowledge with practical experience in data science.`,
   heroImage: "assets/profile.png",
-  resumeLink: "assets/resume.png",
+  resumeLink: "assets/resume.pdf",
 
   socialLinks: [
     { platform: "LinkedIn", url: "https://www.linkedin.com/in/mohd-tarique-948a37308", icon: "linkedin" },
