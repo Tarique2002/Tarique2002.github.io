@@ -946,6 +946,55 @@ section:nth-of-type(odd) { background-color: var(--bg-primary); }
   font-family: var(--font-mono);
 }
 
+/* Project Link Buttons */
+.project-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-lighter);
+  flex-wrap: wrap;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  border-radius: var(--radius-pill);
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.project-link svg {
+  width: 16px;
+  height: 16px;
+}
+
+.project-link.github-link {
+  background: var(--text-primary);
+  color: var(--white);
+}
+
+.project-link.github-link:hover {
+  background: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.project-link.demo-link {
+  background: var(--gradient-btn);
+  color: var(--white);
+}
+
+.project-link.demo-link:hover {
+  background: var(--gradient-btn-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-primary);
+}
+
 /* ============================================
    RESUME SECTION
    ============================================ */

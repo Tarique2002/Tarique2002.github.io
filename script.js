@@ -43,14 +43,18 @@ const portfolioData = {
       description: "Applied data analytics and machine learning techniques to predict sugar levels in patients. Helped Medical Institutes to predict high glucose levels in patients.",
       tags: ["Python", "Machine Learning", "Data Analytics", "Healthcare"],
       date: "May 2024 — Jul 2024",
-      icon: "activity"
+      icon: "activity",
+      github: "https://github.com/Tarique2002/Glucose-Monitoring-Prediction",
+      demo: ""
     },
     {
       title: "Advanced Liver Disorder Detection using AI",
       description: "AI-based detection of advanced liver disorders. Developed machine learning-driven clinical decision support systems for medical diagnostics.",
       tags: ["Python", "AI", "Machine Learning", "Healthcare"],
       date: "May 2025 — Jul 2025",
-      icon: "heart-pulse"
+      icon: "heart-pulse",
+      github: "https://github.com/Tarique2002/Advance-Liver-Disorder",
+      demo: ""
     }
   ],
 
@@ -252,6 +256,10 @@ function renderProjects() {
       <p class="project-description">${project.description}</p>
       <div class="project-tags">
         ${project.tags.map(tag => `<span class="tag">${tag}</span>`).join("")}
+      </div>
+      <div class="project-links">
+        ${project.github ? `<a href="${project.github}" target="_blank" class="project-link github-link"><i data-lucide="github"></i> Source Code</a>` : ''}
+        ${project.demo ? `<a href="${project.demo}" target="_blank" class="project-link demo-link"><i data-lucide="external-link"></i> Live Demo</a>` : ''}
       </div>
     </div>
   `).join("");
