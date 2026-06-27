@@ -39,13 +39,22 @@ const portfolioData = {
 
   projects: [
     {
-      title: "Glucose Monitoring Prediction",
-      description: "Applied data analytics and machine learning techniques to predict sugar levels in patients. Helped Medical Institutes to predict high glucose levels in patients.",
-      tags: ["Python", "Machine Learning", "Data Analytics", "Healthcare"],
-      date: "May 2024 — Jul 2024",
-      icon: "activity",
-      github: "https://github.com/Tarique2002/Glucose-Monitoring-Prediction",
-      demo: "https://glucose-monitoring-prediction-qwc6vbatq8cswr4z7kt9ib.streamlit.app/"
+      title: "ToolHub AI",
+      description: "Modern AI-powered productivity toolkit with background remover, PDF/DOCX converter, AI resume analyzer, image enhancer, photo upscaler, and object remover.",
+      tags: ["React", "FastAPI", "Python", "OpenCV", "Tailwind CSS", "AI"],
+      date: "Jun 2025",
+      icon: "cpu",
+      github: "https://github.com/Tarique2002/toolhubai",
+      demo: ""
+    },
+    {
+      title: "ResumeAI — ATS Optimizer",
+      description: "Full-stack web app that analyzes resumes against ATS criteria, matches them to job descriptions using TF-IDF cosine similarity, and provides AI-powered improvement suggestions.",
+      tags: ["React", "FastAPI", "Python", "NLP", "AI"],
+      date: "Jun 2025",
+      icon: "file-text",
+      github: "https://github.com/Tarique2002/resume-optimizer",
+      demo: ""
     },
     {
       title: "Advanced Liver Disorder Detection using AI",
@@ -55,6 +64,15 @@ const portfolioData = {
       icon: "heart-pulse",
       github: "https://github.com/Tarique2002/Liver-Disorder-Detection",
       demo: "https://liver-disorder-detection-csmbqquxdaomhhrngray8z.streamlit.app/"
+    },
+    {
+      title: "Glucose Monitoring Prediction",
+      description: "ML-powered glucose level prediction and diabetes risk assessment system. Random Forest model with interactive Streamlit dashboard for medical institutes.",
+      tags: ["Python", "Machine Learning", "Streamlit", "Data Analytics", "Healthcare"],
+      date: "May 2024 — Jul 2024",
+      icon: "activity",
+      github: "https://github.com/Tarique2002/Glucose-Monitoring-Prediction",
+      demo: "https://glucose-monitoring-prediction-qwc6vbatq8cswr4z7kt9ib.streamlit.app/"
     }
   ],
 
