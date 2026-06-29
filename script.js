@@ -14,7 +14,7 @@ const portfolioData = {
 
   socialLinks: [
     { platform: "LinkedIn", url: "https://www.linkedin.com/in/mohd-tarique-948a37308", icon: "linkedin" },
-    { platform: "GitHub", url: "#", icon: "github" },
+    { platform: "GitHub", url: "https://github.com/Tarique2002", icon: "github" },
     { platform: "Email", url: "mailto:mohdtariqueansari8899@gmail.com", icon: "mail" }
   ],
 
@@ -39,22 +39,13 @@ const portfolioData = {
 
   projects: [
     {
-      title: "ToolHub AI",
-      description: "Modern AI-powered productivity toolkit with background remover, PDF/DOCX converter, AI resume analyzer, image enhancer, photo upscaler, and object remover.",
-      tags: ["React", "FastAPI", "Python", "OpenCV", "Tailwind CSS", "AI"],
-      date: "Jun 2025",
-      icon: "cpu",
-      github: "https://github.com/Tarique2002/toolhubai",
-      demo: ""
-    },
-    {
-      title: "ResumeAI — ATS Optimizer",
-      description: "Full-stack web app that analyzes resumes against ATS criteria, matches them to job descriptions using TF-IDF cosine similarity, and provides AI-powered improvement suggestions.",
-      tags: ["React", "FastAPI", "Python", "NLP", "AI"],
-      date: "Jun 2025",
-      icon: "file-text",
-      github: "https://github.com/Tarique2002/resume-optimizer",
-      demo: ""
+      title: "InterviewPilot AI — AI Interview Preparation Platform",
+      description: "Full-stack AI-powered interview preparation platform that helps users practice mock interviews, get real-time feedback, and improve their interview skills. Features AI-driven question generation, response analysis, and personalized coaching.",
+      tags: ["JavaScript", "React", "AI", "Full Stack", "Vercel"],
+      date: "Jun 2026",
+      icon: "mic",
+      github: "https://github.com/Tarique2002/InterviewPilot-AI",
+      demo: "https://interviewpilot-ai-seven.vercel.app/"
     },
     {
       title: "Advanced Liver Disorder Detection using AI",
@@ -101,7 +92,7 @@ const portfolioData = {
       degree: "B.Tech in Computer Science & Engineering",
       years: "2022 — 2026",
       location: "Lucknow, India",
-      score: "7.37 CGPA",
+      score: "7.4 CGPA",
       badge: "AU"
     },
     {
